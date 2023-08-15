@@ -11,9 +11,4 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-
-    public function test1(){
-        $users = User::all();
-        return "hello";
-    }
 }

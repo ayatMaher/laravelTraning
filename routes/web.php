@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 Route::get('users' , [UserController::class , 'index']);
 Route::get('user/{id}' , [UserController::class , 'delete']);
+Route::get('user/{id}/edit' , [UserController::class , 'edit'])->name('user.edit');;
+Route::put('user/update/{id}',[UserController::class , 'update'])->name('user.update');;
+

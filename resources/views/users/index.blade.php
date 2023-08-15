@@ -51,9 +51,10 @@
                     <a class="btn btn-outline-danger" href="{{ url('user/'.$user->id) }}">
                          حذف
                     </a>
-                    <a class="btn btn-outline-primary" href="{{ url('user/'.$user->id) }}">
+                    <a class="btn btn-outline-primary" href="{{ route('user.edit', ['id' => $user->id]) }}">
                         تعديل
                     </a>
+
                 </td>
 
             </tr>
